@@ -1,0 +1,12 @@
+# Ignore data and outputs
+data/
+outputs/
+
+# Ignore python artifacts
+__pycache__/
+*.pyc
+
+# Ignore large data files
+*.npy
+*.npz
+*.pth
