@@ -13,14 +13,29 @@ NovaFlow is an end-to-end monocular video pipeline that estimates depth, tracks 
 
 ## Results Gallery
 
-| Stage | Preview |
-|---|---|
-| Step 1: Depth estimation | <img src="assets/screenshots/shot-01.jpg" alt="Step 1 - Depth estimation" width="520" /> |
-| Step 2: Calibrated depth | <img src="assets/screenshots/shot-02.jpg" alt="Step 2 - Calibrated depth" width="520" /> |
-| Step 3: 3D tracking | <img src="assets/screenshots/shot-03.jpg" alt="Step 3 - 3D tracking" width="520" /> |
-| Step 4: Grounded object filtering | <img src="assets/screenshots/shot-04.jpg" alt="Step 4 - Grounded object filtering" width="520" /> |
-| Step 5: Final actionable flow | <img src="assets/screenshots/shot-05.jpg" alt="Step 5 - Final actionable flow" width="520" /> |
-| Step 5: Final motion trails | <img src="assets/screenshots/shot-06.jpg" alt="Step 5 - Final flow trails" width="520" /> |
+<h3 align="center">System Architecture</h3>
+<p align="center">
+  <img src="architecture.png" alt="System Architecture" width="860" />
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center"><strong>Depth Estimation</strong></td>
+    <td align="center"><strong>Final Actionable Flow (Cup)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="depth_estimation.png" alt="Depth Estimation" width="420" /></td>
+    <td><img src="cup_flow.png" alt="Final Actionable Flow Cup" width="420" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Point Tracking</strong></td>
+    <td align="center"><strong>Final Actionable Flow (Suitcase)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="point_track.png" alt="Point Tracking" width="420" /></td>
+    <td><img src="suitcase_flow.png" alt="Final Actionable Flow Suitcase" width="420" /></td>
+  </tr>
+</table>
 
 ## Pipeline Steps
 
